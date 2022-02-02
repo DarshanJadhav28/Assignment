@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function bigLoop() {
+    
+        var worker = new Worker('../js/ass4.js');
+        worker.onmessage = function (event) {
+            alert("Completed "+event.data+" iteration");
+
+        };
+    }
+    
+
+function sayHello(){
+    alert("Helo From Tutorials Point ");
+}
+</script>
+</head>
+<body>
+    <input type="button" onclick="bigLoop();" value="Big Loop" />
+    <input type="button" onclick="sayHello();" value="say Hello" />
+   
+
+
+</body>
+</html>
