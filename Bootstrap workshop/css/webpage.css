@@ -1,0 +1,14 @@
+body {
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: Arial;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-bottom:5px;
+    color: lightseagreen;
+}
+.p {
+    font-family: Arial, Helvetica;
+}
